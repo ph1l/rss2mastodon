@@ -1,0 +1,2 @@
+- figure out the media handling code that's currently commented out
+- handle shutdown (check for outstanding posts and exit main loop cleanly? Or maybe cache lastspottime to a file for next startup?)

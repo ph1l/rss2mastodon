@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rss2mastodon"
+dynamic = ["version"]
+dependencies = ["bs4", "pillow", "mastodon.py", "feedparser"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rss2mastodon.__version__"}
+
+[project.scripts]
+rss2mastodon = "rss2mastodon.rss2mastodon:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

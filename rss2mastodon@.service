@@ -1,0 +1,6 @@
+[Service]
+Type=simple
+ExecStart=/home/bots/venvs/rss2msatodon/bin/rss2mastodon -c /home/bots/.config/rss2mastodon/%i.ini -v
+
+[Install]
+WantedBy=default.target
